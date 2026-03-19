@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chính Chủ Bán Đất - Trung Land</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="text-slate-800">
+
+    <header class="sticky top-0 z-[80] bg-white/80 backdrop-blur-md border-b border-slate-200">
+        <div class="max-w-6xl mx-auto px-4 h-16 flex justify-between items-center">
+            <a href="/" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 bg-blue-600 rounded-xl flex items-center justify-center shadow-lg overflow-hidden">
+                    <img src="photos/introduce.jpeg" alt="Logo" class="w-full h-full object-cover">
+                </div>
+                <h1 class="font-black text-xl italic tracking-tighter text-slate-900 uppercase">
+                    忠 <span class="text-blue-600">Trung Land</span>
+                </h1>
+            </a>
+            <div class="flex gap-4 items-center">
+                <button onclick="showAboutMe()" class="text-sm font-bold text-slate-600 hover:text-blue-600 transition">Về tôi</button>
+                <a href="https://zalo.me/0966059859" target="_blank" class="bg-blue-600 text-white px-4 py-2 rounded-lg text-xs font-bold shadow-lg hover:bg-blue-700 transition-all active:scale-95">Liên hệ ngay</a>
+            </div>
+        </div>
+    </header>
+
+    <div id="about-modal" class="fixed inset-0 z-[120] hidden overflow-y-auto bg-slate-900/95 backdrop-blur-sm px-4 py-10">
+        <button onclick="closeAboutMe()" class="fixed top-5 right-5 z-[130] bg-white text-slate-900 w-12 h-12 rounded-full font-bold shadow-2xl flex items-center justify-center hover:bg-red-500 transition">✕</button>
+        <div class="max-w-2xl mx-auto bg-white rounded-[3rem] overflow-hidden shadow-2xl animate-modal">
+            <div class="h-32 bg-gradient-to-r from-blue-600 to-indigo-600"></div>
+            <div class="px-8 pb-12 -mt-16 text-center">
+                <img src="photos/introduce.jpeg" class="w-32 h-32 rounded-full mx-auto border-4 border-white shadow-xl object-cover">
+                <h2 class="mt-4 text-3xl font-black text-slate-900 italic">忠 Trung Land</h2>
+                <p class="text-blue-600 font-bold text-sm tracking-widest uppercase mb-6 underline underline-offset-4 decoration-2">Chủ sở hữu quỹ đất</p>
+                
+                <div class="text-left space-y-6">
+                    <p class="text-slate-600 text-sm leading-relaxed italic text-center px-4">"Tôi trực tiếp sở hữu và tuyển chọn những lô đất có pháp lý sạch nhất. Cam kết hỗ trợ anh chị từ xem đất đến khi cầm sổ trên tay."</p>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 font-bold">
+                        <div class="p-4 bg-blue-50 rounded-2xl border border-blue-100 flex items-center gap-3">
+                            <i class="fa-solid fa-phone text-blue-600"></i>
+                            <div>
+                                <p class="text-[9px] uppercase text-blue-400">Số chính</p>
+                                <a href="tel:0966059859" class="text-blue-700">0966.059.859</a>
+                            </div>
+                        </div>
+                        <div class="p-4 bg-slate-50 rounded-2xl border border-slate-100 flex items-center gap-3">
+                            <i class="fa-solid fa-phone-flip text-slate-400"></i>
+                            <div>
+                                <p class="text-[9px] uppercase text-slate-400">Số phụ</p>
+                                <a href="tel:0963020420" class="text-slate-700">0963.020.420</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="space-y-2 pt-2">
+                        <a href="https://www.facebook.com/nguyen.quoc.gia.bao.694352?mibextid=wwXIfr&rdid=2uBdPa6hHBCLs6EH&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F18AMxCbiGb%2F%3Fmibextid%3DwwXIfr" target="_blank" class="social-link bg-[#1877F2]">
+                            <span class="flex items-center gap-3"><i class="fa-brands fa-facebook text-xl"></i> Facebook Cá Nhân</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="https://zalo.me/0966059859" target="_blank" class="social-link bg-[#0068FF]">
+                            <span class="flex items-center gap-3"><i class="fa-solid fa-comment-sms text-xl"></i> Zalo (Lấy hồ sơ đất)</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/@rivewthucte?_r=1&_t=ZS-94p6LrCNmmC" target="_blank" class="social-link bg-black">
+                            <span class="flex items-center gap-3"><i class="fa-brands fa-tiktok text-xl"></i> TikTok (Review Thực Tế)</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="max-w-6xl mx-auto px-4 py-8 md:py-16">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6 order-2 lg:order-1 text-center lg:text-left">
+                <span class="bg-blue-100 text-blue-700 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest italic">Tin cậy - Minh bạch</span>
+                <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 leading-tight italic uppercase">Chào bạn, tôi là <span class="text-blue-600"> Trung Land</span></h1>
+                <p class="text-lg text-slate-600 italic">"Video thực tế giúp anh chị hình dung rõ nhất về vị trí và tiềm năng của khu đất trước khi đến tận nơi."</p>
+                <div class="inline-flex items-center gap-4 border-l-4 border-blue-600 pl-4 py-2 bg-white shadow-sm rounded-r-xl">
+                    <div class="text-left font-bold">
+                        <p class="text-slate-900 text-xs uppercase opacity-50">Hotline hỗ trợ 24/7</p>
+                        <a href="tel:0966059859" class="text-2xl text-blue-600">0966.059.859</a>
+                    </div>
+                </div>
+            </div>
+            <div class="order-1 lg:order-2">
+                <div class="video-container shadow-2xl border-4 border-white">
+                    <video controls poster="photos/introduce.jpeg">
+                        <source src="videos/introduce.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="max-w-6xl mx-auto px-4 py-16">
+        <div class="mb-10 flex flex-col md:flex-row md:items-end justify-between gap-4">
+            <div>
+                <h2 class="text-3xl font-bold italic uppercase"><span class="text-blue-600">#</span> Danh sách thực địa</h2>
+                <p class="text-slate-500 mt-2 italic text-sm">Di chuột vào ảnh để xem video quay nhanh.</p>
+            </div>
+        </div>
+        <div id="property-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8"></div>
+    </main>
+
+    <div id="detail-modal" class="fixed inset-0 z-[100] hidden overflow-y-auto bg-white">
+        <button onclick="closeDetail()" class="fixed top-5 right-5 z-[110] bg-slate-900 text-white w-12 h-12 rounded-full font-bold flex items-center justify-center hover:bg-red-600 transition">✕</button>
+        <div class="max-w-4xl mx-auto px-4 py-12">
+            <div id="modal-content" class="space-y-8"></div>
+        </div>
+    </div>
+
+    <footer class="bg-slate-900 text-white py-16 px-4 mt-12">
+        <div class="max-w-4xl mx-auto text-center space-y-8 italic">
+            <h2 class="text-3xl font-black uppercase underline decoration-blue-500 underline-offset-8">Cam kết của Trung Land</h2>
+            <div class="grid md:grid-cols-3 gap-8 text-sm text-left font-medium uppercase tracking-tight">
+                <div class="p-6 border border-slate-700 rounded-2xl bg-slate-800/50">
+                    <p class="text-blue-400 mb-2 font-bold">Pháp lý an toàn</p>
+                    <p class="text-slate-400 normal-case italic">Sổ hồng trao tay, không tranh chấp.</p>
+                </div>
+                <div class="p-6 border border-slate-700 rounded-2xl bg-slate-800/50">
+                    <p class="text-blue-400 mb-2 font-bold">Hỗ trợ vay</p>
+                    <p class="text-slate-400 normal-case italic">Hỗ trợ ngân hàng lên đến 70%.</p>
+                </div>
+                <div class="p-6 border border-slate-700 rounded-2xl bg-slate-800/50">
+                    <p class="text-blue-400 mb-2 font-bold">Bao thuế phí</p>
+                    <p class="text-slate-400 normal-case italic">Hỗ trợ trọn gói thủ tục sang tên.</p>
+                </div>
+            </div>
+            <p class="text-slate-600 pt-8 text-[10px] tracking-[5px] uppercase">© 2026 忠 TRUNG LAND - GIÁ TRỊ THỰC</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
