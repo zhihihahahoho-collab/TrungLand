@@ -28,14 +28,14 @@ const properties = [
     },
     {
         id: "03",
-        price: "650 Triệu", // Giá ước tính dựa trên thị trường khu vực Dầu Tiếng cho lô 10m ngang
+        price: "450 Triệu",
         size: "320m² (10x32)",
         legal: "Sổ hồng riêng, 100m² Thổ cư",
         direction: "Chính Nam",
         media: [
             { type: 'video', src: 'videos/3.mp4' }
         ],
-        desc: "Lô góc ngang 10m cực hiếm. Diện tích lớn, đã có sẵn 100m² thổ cư. Sổ hồng riêng cầm tay. Phù hợp làm nhà vườn hoặc phân lô, tiềm năng sinh lời cao."
+        desc: "Lô góc ngang 10m cực hiếm tại Dầu Tiếng. Diện tích lớn, đã có sẵn 100m² thổ cư. Sổ hồng riêng cầm tay. Phù hợp làm nhà vườn hoặc phân lô, tiềm năng sinh lời cao."
     }, 
     {
         id: "04",
@@ -46,11 +46,53 @@ const properties = [
         media: [
             { type: 'video', src: 'videos/4.mp4' }
         ],
-        desc: "Giá bán thực tế chỉ 270 triệu. Cách đường nhựa lớn 120m. Chỉ 5 phút di chuyển ra trung tâm xã: Thế giới di động, Điện máy xanh, Trạm y tế, Chợ. Đầy đủ tiện ích sống."
+        desc: "Chỉ 270 triệu sở hữu ngay lô đất 230m². Cách đường nhựa lớn 120m, đường vào thông thoáng. Khu dân cư hiện hữu, an ninh, phù hợp xây nhà ở hoặc đầu tư. Chỉ 5 phút tới trung tâm xã: chợ, Thế Giới Di Động, Điện Máy Xanh, trạm y tế. Giá tốt so với khu vực, tiềm năng tăng giá cao."
+    },
+    {
+        id: "05",
+        price: "580 Triệu",
+        size: "150m² (6x25)",
+        legal: "Sổ hồng riêng, Full thổ cư",
+        direction: "Đông Bắc",
+        media: [
+            { type: 'video', src: 'videos/5.mp4' }
+        ],
+        desc: "Sát trung tâm xã, diện tích 6x25 full thổ cư. Tiện ích xung quanh không thiếu thứ gì: hồ bơi, sân bóng, sân tenis, phòng gym... Thích hợp cho gia đình muốn tận hưởng không gian sống hiện đại."
+    },
+    {
+        id: "06",
+        price: "850 Triệu",
+        size: "150m² (5x30)",
+        legal: "Sổ hồng riêng, thổ cư 100%",
+        direction: "Đông Nam",
+        media: [
+            { type: 'video', src: 'videos/6.mp4' }
+        ],
+        desc: "Đất thuộc khu đô thị Becamex Bình Phước, quy hoạch bài bản. Đường nhựa rộng, có vỉa hè và cây xanh, xe ô tô di chuyển thoải mái. Khu dân cư hiện hữu, hạ tầng hoàn thiện, điện nước đầy đủ. Phù hợp xây ở hoặc đầu tư dài hạn."
+    },
+    {
+        id: "07",
+        price: "195 Triệu",
+        size: "225m² (5x45)",
+        legal: "Sổ hồng riêng, 100m² Thổ cư",
+        direction: "Tây Nam",
+        media: [
+            { type: 'video', src: 'videos/7.mp4' }
+        ],
+        desc: "Vị trí xã Tân Hưng (Đồng Nai), cách trung tâm xã chỉ 1km. Lộ giới 18m, đường bê tông ô tô ra vào thoải mái. Giá 195 triệu đã bao gồm tất cả chi phí sang tên công chứng, làm sổ mới. Liên hệ ngay để xem đất."
+    },
+    {
+        id: "08",
+        price: "560 Triệu",
+        size: "504m² (8x63)",
+        legal: "Sổ hồng riêng, bao 50m² Thổ cư",
+        direction: "Tây Bắc",
+        media: [
+            { type: 'video', src: 'videos/8.mp4' }
+        ],
+        desc: "Diện tích cực khủng 8x63, sát KCN Chơn Thành 1, 2. Vị trí cực kỳ thích hợp để xây dãy trọ kinh doanh do lượng công nhân đông đúc. Giá trọn gói 560 triệu bao luôn 50m² thổ cư cho khách."
     }
 ];
-
-// Giữ nguyên các hàm renderProperties, showDetail, scrollSlider... từ file cũ của bạn
 
 // Hiển thị danh sách đất ra màn hình
 function renderProperties() {
