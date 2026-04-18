@@ -91,6 +91,39 @@ const properties = [
             { type: 'video', src: 'videos/8.mp4' }
         ],
         desc: "Diện tích cực khủng 8x63, sát KCN Chơn Thành 1, 2. Vị trí cực kỳ thích hợp để xây dãy trọ kinh doanh do lượng công nhân đông đúc. Giá trọn gói 560 triệu bao luôn 50m² thổ cư cho khách."
+    },
+    {
+    id: "09",
+    price: "3xx Triệu",
+    size: "300m² (Diện tích lớn)",
+    legal: "Sổ hồng riêng",
+    direction: "Liên hệ trực tiếp",
+    media: [
+        { type: 'video', src: 'videos/9.mp4' }
+    ],
+    desc: "Lô đất diện tích hơn 300m², thế đất bằng phẳng, vuông vức cực đẹp. Đường rộng thông thoáng, xe tải ra vào thoải mái, di chuyển thuận tiện. Không gian xung quanh trong lành với nhiều cây xanh, cực kỳ phù hợp làm nhà vườn nghỉ dưỡng hoặc đầu tư đón đầu xu hướng đất diện tích lớn. Liên hệ ngay để nhận thông tin vị trí chính xác."
+    },
+    {
+    id: "10",
+    price: "6xx",
+    size: "400m²+",
+    legal: "Sổ hồng riêng",
+    direction: "Liên hệ trực tiếp",
+    media: [
+        { type: 'video', src: 'videos/10.mp4' }
+    ],
+    desc: "Lô đất diện tích cực lớn (hơn 400m²), không gian rộng rãi, thoáng mát với nhiều cây xanh bao quanh. Đường vào thông thoáng, ô tô di chuyển tận nơi thuận tiện. Thế đất bằng phẳng, cực kỳ lý tưởng để thiết kế nhà vườn nghỉ dưỡng hoặc đầu tư tích lũy lâu dài. Khu vực yên tĩnh, dân cư hiện hữu, tiềm năng tăng giá rất tốt."
+    },
+    {
+    id: "11",
+    price: "380 Triệu",
+    size: "250m²",
+    legal: "Sổ hồng riêng",
+    direction: "Chưa xác định",
+    media: [
+        { type: 'video', src: 'videos/11.mp4' }
+    ],
+    desc: "Lô đất diện tích khoảng 250m², nằm trong khu dân cư hiện hữu, thích hợp xây nhà ở ngay. Đường vào đất ô tô di chuyển thuận tiện. Đất bằng phẳng, dễ xây dựng. Khu vực an ninh, yên tĩnh, phù hợp định cư lâu dài hoặc đầu tư sinh lời."
     }
 ];
 
@@ -151,8 +184,7 @@ function showDetail(id) {
                     ${mediaListHTML}
                 </div>
                 <button onclick="scrollSlider(1)" class="nav-btn absolute right-4 top-1/2 -translate-y-1/2 z-20 w-12 h-12 rounded-full hidden md:flex items-center justify-center text-xl font-bold bg-white/20 text-white hover:bg-blue-600 transition">❯</button>
-                <div class="absolute bottom-4 left-1/2 -translate-x-1/2 bg-blue-600 text-white px-4 py-1 rounded-full text-[10px] font-bold tracking-widest uppercase shadow-lg">${p.media.length} MEDIA</div>
-            </div>
+                </div>
 
             <div class="grid md:grid-cols-2 gap-12 italic">
                 <div class="space-y-4 text-sm dark:text-slate-200">
